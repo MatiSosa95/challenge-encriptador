@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge ONE - Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/img/Logo.png" alt="Logo">
+        <h2 class="tituloChallenge"> Challenge ONE - Encriptador</h1>
+    </header>
+    <main class="main">
+        <section class="box">
+            <form action="">
+                <h2>Texto a Encriptar</h2>
+                <textarea class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí. Solo letras minusculas, sin acento"></textarea>
+                <button onclick="encriptar();" type="button" class="btn">Encriptar</button>
+                <button onclick="desencriptar();" type="button" class="btn">Desencriptar</button>
+            </form>
+        </section>
+
+        <section class="msg-box">
+            <h2>Mensaje encriptado</h2>
+            <textarea class="text-input-salida" type="text" name="" id="msg" placeholder="Texto no encontrado" readonly></textarea>
+            <button onclick="portapapeles();" type="button" class="btn-copia" id="boton-copia" hidden>Copiar</button>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <div>
+                <p class="sigueme">¡Sigueme en las redes!</p>
+                <a href="https://www.linkedin.com/in/mati-sosa-lucero95/" target="_blank" class="socialMedia"><img class="img-linkedin" src="/img/R.png" alt=""></a>
+                <a href="https://github.com/MatiSosa95" target="_blank" class="socialMedia"><img class="img-github" src="/img/github_PNG53.png" alt=""></a>
+            </div>
+        </div>
+        <p>&copy; Encriptador de Texto - Matias Sosa</p>
+    </footer>
+    <script src="app.js"></script>
+    
+</body>
+</html>
