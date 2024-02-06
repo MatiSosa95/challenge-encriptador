@@ -2,7 +2,7 @@
 function encriptar(){
     let texto= document.querySelector("#input-texto").value;
 
-    if(!texto.match(/^[a-z/s]+$/)){
+    if(!texto.match(/^[a-z/s ]+$/)){
         limpiarCajainput();
         return alert("El texto debe contener letras minusculas y sin acentos");
 
