@@ -1,11 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+html{
+    background-color: #f3f5fc;
+}
+
+.logo{
+    margin: 2% auto;
+    width: 120px;
+    height: auto;
+}
+
+main{
+    width: 90%;
+    height: auto;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.caja-texto{
+    position: relative;
+    margin: 3em 2% 2% 0.5rem;
+    width: 85%;
+    height: 8em;
+    padding: 3%;
+    background-color: #f3f5fc;
+    border: none;
+    cursor: pointer;
+    color: #0a3871;
+    font-family: "Inter", sans-serif;
+    font-size: 32pz;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    transition: 1s all;
+    outline: none;
+}
+
+.caja-texto::placeholder{
+    color:#0a3871 ;
+}
+
+.contenedor-botones{
+    display: flex;
+    margin: 1% auto 5%;
+    position: relative;
+    top: 2em;
+    left: 0.1em;
+}
+
+.btn{
+    width: 328px;
+    padding: 24px;
+    font-size: 16px;
+    margin: 2%;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0pc 40px 80px -8px rgba(0, 0, 0, 0.08);
+}
+
+#encriptar{
+    background-color: #0a3871;
+    color: white;
+}
+
+#desencriptar,#copia{
+    background-color: #d8dfe8;
+    color: #0a3871;
+}
+
+.section2{
+    margin: auto;
+    width: 400px;
+    height: 610px;
+    flex-shrink: 0;
+    text-align: center;
+    border-radius: 32px;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.mensaje{
+    color: var(--Gray-gray-500, #343a40);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.mensaje p{
+    margin: 18px;
+    color: var(--Gray-gray-400, #495057);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+#copia{
+    margin: auto;
+    visibility: hidden;
+}
+
+.contenedor-resultado{
+    position: static;
+    width: 100%;
+    height: 71%;
+    padding: 5%;
+    text-align: left;
+    display: none;
+}
+
+.texto-resultado{
+    width: 90%;
+    color: var(--Gray-gray-400, #495057);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%
+
+}
 
 
 
+
+/*--------------Footer------------------*/
 
   footer{
     text-align: center;
-    background-color: #aeabab;
-    padding: 5px 0;
+    width: 70%;
     
   }
 
@@ -14,22 +149,12 @@
     transform: translateY(-50%);
   }
 
-  .img-linkedin{
-    width: 30px;
+  .redes img{
+    display: inline;
+    position: relative;
     height: 30px;
-    transform: translateY(-100%);
-  }
-  .img-github{
     width: 30px;
-    height: 30px;
-    transform: translateY(-100%);
+    margin: 0 2px;
   }
-
-  footer p{
-    transform: translateY(-150%);
-  }
-
-     /* 
  
-  background: linear-gradient(#f3f5fc, #aeabab);
-  */
+ 

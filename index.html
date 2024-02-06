@@ -14,33 +14,41 @@
     <title>Challenge ONE - Encriptador</title>
 </head>
 <body>
-    <header>
-        <img src="img/Logo.png" alt="Logo">
-        <h2 class="tituloChallenge"> Challenge ONE - Encriptador</h1>
-    </header>
     <main>
-        <section>
-            <!-- Inicio del lado izquiedo-->
-            <article class="articuloizq">
-                <textarea name="input" id="inputText" cols="30" rows="10" placeholder="Ingrese su frase aquí..."></textarea>
-                <div class="bottomContainer">
-                    <p>&#9888; Ingrese solo letras minusculas y sin acentos</p>
-                    <div class="btnContainer">
-                        <button type="button" value="Desencriptar" id="desencriptar" onclick="encriptar();" class="btn">Encriptar</button>
-                        <button type="button" value="Encriptar" id="encriptar" onclick="desencriptar();" class="btn">Desencriptar</button>
-                    </div>
-                </div>
-            </article>
-            <!-- Fin  del lado izquiedo-->
-            <!-- Inicio del lado derecho-->
-            <article class="articuloder">
-                <textarea name="output" id="outputText" cols="30" rows="10" readonly class="textoNoEncontrado"> Texto No encontrado</textarea>
-                <button type="button" id="boton-copia" onclick="portapapeles();" class="btn">Copiar</button>
-            </article>
-            <!-- Fin  del lado derecho-->
+        <div class="contenedor-logo">
+            <img class="logo" src="img/Logo.png" alt="">
+        </div>
+
+        <section class="section1">
+            <div class="contenedor-caja-texto">
+                <textarea class="caja-texto" placeholder="Ingrese el texto aquí..."></textarea>
+            </div>
+            <div class="alertaMin">
+                <p>&#9888; Ingrese solo letras minusculas y sin acentos</p>
+            </div>
+
+            <div class="contenedor-botones">
+                <button class="btn" id="encriptar"  onclick="encriptar();">Encriptar</button>
+                <button class="btn" id="desencriptar"  onclick="desencriptar();">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="mensaje">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+
+            <div class="contenedor-resultado">
+                <textarea class="texto-resultado"></textarea>
+            </div>
+
+            <div class="contenedor-copia"></div>
+            <button class="boton" id="copia"  onclick="portapapeles();">Copiar</button>
         </section>
     </main>
-            <div>
+    
+    <footer>
+            <div class="redes">
                 <p class="sigueme">¡Sigueme en las redes!</p>
                 <a href="https://www.linkedin.com/in/mati-sosa-lucero95/" target="_blank" class="socialMedia"><img class="img-linkedin" src="img/R.png" alt="Linkedin-Logo"></a>
                 <a href="https://github.com/MatiSosa95" target="_blank" class="socialMedia"><img class="img-github" src="img/github_PNG53.png" alt="Github-Logo"></a>

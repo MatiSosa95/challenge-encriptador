@@ -1,6 +1,6 @@
 
 function encriptar(){
-    let texto= document.querySelector("#inputText").value;
+    let texto= document.querySelector(".caja-texto").value;
 
     if(!texto.match(/^[a-z/s ]+$/)){
         limpiarCajainput();
@@ -9,23 +9,25 @@ function encriptar(){
     }
     
     let textoCifrado= texto.replace(/e/gi,'enter').replace(/i/gi,'imes').replace(/a/gi,'ai').replace(/o/gi,'ober').replace(/u/gi,'ufat');
-    document.querySelector("#outputText").value=textoCifrado;
-    document.querySelector("#inputText").value;
+    document.querySelector(".texto-resultado").value=textoCifrado;
+    document.querySelector(".caja-texto").value;
     limpiarCajainput();
 
-    document.getElementById("#boton-copia").removeAttribute("hidden");
+    document.getElementById("#copia").removeAttribute("hidden");
+
 }
 
 
 function desencriptar(){  
-    let texto= document.querySelector("#inputText").value;
+    let texto= document.querySelector(".caja-texto").value;
     let textoCifrado= texto.replace(/enter/gi,'e').replace(/imes/gi,'i').replace(/ai/gi,'a').replace(/ober/gi,'o').replace(/ufat/gi,'u');
-    document.querySelector("#outputText").value= textoCifrado;
+    document.querySelector(".texto-resultado").value= textoCifrado;
     limpiarCajainput();
+    
 }
 
 function portapapeles(){
-    let copia= document.getElementById("outputText").value;
+    let copia= document.querySelector(".texto-resultado").value;
     navigator.clipboard.writeText(copia)
     .then(() => {console.log("Texto Copiado en portapapeles")})
     .catch(err => {console.log("Algo salio mal",err)});
@@ -35,11 +37,11 @@ function portapapeles(){
 }
 
 function limpiarCajainput(){
-    let limpiar= document.querySelector("#inputText").value="";
+    let limpiar= document.querySelector(".caja-texto").value="";
 }
 
 function limpiarCajaOutput(){
-    let limpiar= document.querySelector("#outputText").value="";
+    let limpiar= document.querySelector(".texto-resultado").value="";
 }
 
 
