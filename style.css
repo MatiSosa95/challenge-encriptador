@@ -1,128 +1,6 @@
 
-*{
-    font-family: Inter;
-}
-
-body{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header{
-    background-color: #f3f5fc;
-    padding: 5px 0;
-}
-
-header img{
-    position: absolute;
-    transform: translateY(25px);
-}
-
-.tituloChallenge{
-    font-size: 35px;
-    font: bold;
-    text-align: center;
-}
-
-.main{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(#f3f5fc, #aeabab);
-}
-
-h2{
-    padding-left: 15px;
-}
-
-.box{
-    display: block;
-    padding-left: 150px;
-}
-
-.msg-box{
-    display: block;
-    padding-right: 150px;
-
-}
-
-.letras{
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-
-.text-input{
-    width: 500px;
-    height: 300px;
-    padding: 15px;
-    resize: none;
-    font-size: 23px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    box-shadow: rgba(0,0,0,0.25) 0px 25px 50px -12px;
-    
-
-}
-
-.text-input-salida{
-
-    width: 500px;
-    height: 300px;
-    padding: 15px;
-    resize: none;
-    font-size: 23px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    box-shadow: rgba(0,0,0,0.25) 0px 25px 50px -12px;
-}
-
-.btn{
-    width: 150px;
-    height: 60px;
-    border: 3px solid black;
-    border-radius: 45px;
-    transition: all 0.3s;
-    cursor: pointer;
-    background: white;
-    font-size: 1.2em;
-    font-weight: 550; 
-    
-
-    
-}
-
-.btn:hover{
-    background: black;
-    color: white;
-    font-size: 1em;
-  }
-
-  .btn-copia{
-    width: 150px;
-    height: 60px;
-    border: 3px solid black;
-    border-radius: 45px;
-    transition: all 0.3s;
-    cursor: pointer;
-    background: white;
-    font-size: 1.2em;
-    font-weight: 550; 
 
 
-    
-}
-
-.btn-copia:hover{
-    background: black;
-    color: white;
-    font-size: 1em;
-  }
-
- 
 
   footer{
     text-align: center;
@@ -151,5 +29,7 @@ h2{
     transform: translateY(-150%);
   }
 
-    
-  
+     /* 
+ 
+  background: linear-gradient(#f3f5fc, #aeabab);
+  */
