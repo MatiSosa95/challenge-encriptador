@@ -33,7 +33,6 @@ main{
     border: none;
     cursor: pointer;
     color: #0a3871;
-    font-family: "Inter", sans-serif;
     font-size: 32pz;
     font-style: normal;
     font-weight: 400;
@@ -66,15 +65,15 @@ main{
 
 .btn:hover{
     transform: scale(1.1);
-    box-shadow: 0pc 40px 80px -8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0pc 40px 80px -8px rgba(0, 0, 0, 0.10);
 }
 
-#encriptar{
+#encriptar,#copia{
     background-color: #0a3871;
     color: white;
 }
 
-#desencriptar,#copia{
+#desencriptar{
     background-color: #d8dfe8;
     color: #0a3871;
 }
@@ -87,7 +86,7 @@ main{
     text-align: center;
     border-radius: 32px;
     background: white;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.10);
 }
 
 .mensaje{
@@ -111,7 +110,6 @@ main{
 
 #copia{
     margin: auto;
-    visibility: hidden;
 }
 
 .contenedor-resultado{
@@ -129,7 +127,7 @@ main{
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%
+    line-height: 150%;
 
 }
 
