@@ -131,9 +131,6 @@ main{
 
 }
 
-
-
-
 /*--------------Footer------------------*/
 
   footer{
@@ -155,4 +152,59 @@ main{
     margin: 0 2px;
   }
  
- 
+ /*-------------CSS de Celular-----------*/
+
+ @media screen and (max-width: 480px){
+    *{
+        width: auto;
+        height: auto;
+    }
+
+    main{
+        width: 90%;
+    }
+
+    .section1{
+        width: 100%;
+    }
+
+    .caja-texto{
+        width: 90%;
+        margin: 10% auto;
+    }
+
+    .contenedor-botones{
+        width: auto;
+        display: block;
+    }
+
+    .btn{
+        width: 90%;
+        margin: 3% auto;
+    }
+
+    .btn:hover{
+        transform: none;
+    }
+
+    .section2{
+        position: relative;
+        width: 95%;
+        height: auto;
+        margin: 15% auto;
+    }
+
+    .contenedor-resultado{
+        height: auto;
+    }
+
+    footer{
+        margin: 1% auto;
+        
+    }
+
+    .redes{
+        margin:  auto ;
+    }
+
+ }
